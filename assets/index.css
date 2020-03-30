@@ -48,12 +48,14 @@ body , html{
     border-radius: 20px;
     margin-top: 5%;
     background-color: rgb(161, 226, 152);
+    border-style: solid;
 }
 #questions{
     display: none;
     width: 60%;
     margin: 0 auto;
     margin-top: 5%;
+    margin-bottom: 5%;
     text-align: center;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -65,6 +67,7 @@ body , html{
     color: rgb(32, 21, 21);
     font-family: Passion One;
     word-spacing: 22px;
+    padding: 2%;
 }
 #getQuestions{
     padding: 2% 0 3% 0;
@@ -72,7 +75,8 @@ body , html{
     padding: 1%;
 }
 #optionBank{
-    border: solid 5px #000;
+    border: solid 5px;
+    border-color: #000;
     margin: 5%;
     padding: 3%;
     border-radius: 25px;
@@ -81,9 +85,14 @@ body , html{
     border: solid 2px black;
     font-family: Righteous;
     font-size: 24px;
-    padding: 2%;
-    margin: 1%;
+    padding: 4%;
+    margin: 3%;
     border-radius: 25px;
+}
+#explaination{
+    display: none;
+    font-family: Righteous;
+    padding: 1%;
 }
 .explained{
     font-size: 24px;
@@ -96,18 +105,23 @@ body , html{
 .btn{
     padding: 3% 5% 3% 5%;
     color: white;
-    background-color: #000;
+    background-color: rgb(139, 129, 129);
     font-size: 22px;
     font-family: Righteous;
     border-radius: 25px;
+    box-shadow: 0;
+    border-style: solid;
 }
-#check{
-    margin-right: 5%;
+.checkbtn{
+    padding: 3% 5% 3% 5%;
+    color: white;
+    background-color: rgb(10, 10, 10);
+    font-size: 22px;
+    font-family: Righteous;
+    border-radius: 25px;
+    box-shadow: 0;
+    border-style: solid;
 }
-#next{
-    margin-left: 5%;
-}
-
 
 
 
