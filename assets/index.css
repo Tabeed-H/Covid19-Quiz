@@ -8,25 +8,40 @@ body , html{
 }
 #header{
     width: 100%;
-    background-image: url(images/image1.jpg);
+    /*background-image: url(images/image1.jpg);*/
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: center;
     margin-top: 0;
 }
+.imgtag{
+    margin:  auto;
+    border-radius: 50%;
+    width: 10%;
+    display: block;
+    border: solid 5px #000;
+    padding: 2px;
+    margin-top: 3%;
+}
+.line{
+    width: 40%;
+    margin: auto;
+    height: 2px;
+    background-color: gray;
+    border-radius: 5px;
+}
 .heading{
     text-align: center;
-    color: white;
-    padding-top: 5%;
+    color: #000;
+    padding-top: 1%;
     font-family : Righteous;
     font-size: 42px;
 }
 .sub-heading{
     text-align: center;
-    color: white;
+    color: #000;
     font-family: Yanone Kaffeesatz;
     font-size: 32px;
-    padding-top: 2%;
     padding-bottom: 5%;
 }
 #About{
@@ -105,22 +120,28 @@ body , html{
 .btn{
     padding: 3% 5% 3% 5%;
     color: white;
-    background-color: rgb(139, 129, 129);
+    background-color: rgb(10,10,10);
+    opacity: 0.3;
     font-size: 22px;
     font-family: Righteous;
     border-radius: 25px;
     box-shadow: 0;
     border-style: solid;
+    width: 70%;
+    transition-duration: 0.4s;
 }
 .checkbtn{
     padding: 3% 5% 3% 5%;
     color: white;
     background-color: rgb(10, 10, 10);
+    opacity: 1;
     font-size: 22px;
     font-family: Righteous;
     border-radius: 25px;
     box-shadow: 0;
     border-style: solid;
+    width: 70%;
+    transition-duration: 0.4s;
 }
 
 
@@ -133,10 +154,15 @@ body , html{
     .heading{
         font-size: 32px;
     }
+    .imgtag{
+        width: 25%;
+    }
     .sub-heading{
-        font-size: 28px;
-        padding-top: 7%;
+        font-size: 24px;
+        padding-top: 1%;
         padding-bottom: 7%;
+        padding-right: 2%;
+        padding-left: 2%;
     }
     #About{
         font-size: 24px;
@@ -145,11 +171,15 @@ body , html{
     #startbtn{
         font-size: 20px;
         margin-top: 10%;
+        width: 70%;
     }
     #questions{
         width: 90%;
     }
     .btn{
         font-size: 18px;
+    }
+    .checkbtn{
+        font-size: 20px;
     }
   }
