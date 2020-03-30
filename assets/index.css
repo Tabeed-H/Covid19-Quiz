@@ -38,6 +38,9 @@ body , html{
     font-size: 32px;
     display: block;
 }
+#paragraph{
+    display: block'
+}
 #startbtn{
     font-family: Righteous;
     font-size: 24px;
@@ -46,11 +49,8 @@ body , html{
     margin-top: 5%;
     background-color: rgb(161, 226, 152);
 }
-.start-btn{
-    display: block;
-}
 #questions{
-    display: block;
+    display: none;
     width: 60%;
     margin: 0 auto;
     margin-top: 5%;
