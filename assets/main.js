@@ -9,6 +9,7 @@ let presentChoiceC = document.getElementById("C")
 let presentChoiceD = document.getElementById("D")
 let presentExplaination = document.getElementById("explaination");
 let button = document.getElementById("next");
+let end = document.getElementById("moreLinks");
 let questionsBank =[
     {
         question : "When Was COVID-19 Declared A Global Pandemic ?",
@@ -16,17 +17,19 @@ let questionsBank =[
         choiceB : "Febuary 2020",
         choiceC : "December 2019",
         choiceD : "March 2020",
-        correct : "B",
-        tag : "WHO Declared COVID-19 A Global Pandemic In the month of Febuary 2020"
+        correct : "D",
+        tag : "The World Health Organization (W.H.O) on March 11 declared COVID-19 a pandemic, pointing to the over 118,000 cases of the coronavirus illness in over 110 countries and territories around the world and the sustained risk of further global spread.",
+        source : "Times"
     },
     {
-        question : "Which Is The Most Affected Country ?",
-        choiceA : "China",
-        choiceB : "Italy",
-        choiceC : "Spain",
-        choiceD : "America",
+        question : "COVID-19 Ceases To Exit In Which Temperature Range ?",
+        choiceA : "36 - 39 \&#8451;",
+        choiceB : "45 - 50 \&#8451;",
+        choiceC : "At Any Temperature",
+        choiceD : "None Of The Above",
         correct : "D",
-        tag : "Currently America Has Recorded Highest Deadths Due To The Virus"
+        tag : "From the evidence so far, the new coronavirus can be transmitted in ALL AREAS, including areas with hot and humid weather",
+        source : "W.H.O"
     },
     {
         question : "In What Ways Can We Containe The Spread Of The Virus ?",
@@ -35,8 +38,39 @@ let questionsBank =[
         choiceC : "Avoiding Social Gathering",
         choiceD : "All Of The Above",
         correct : "D",
-        tag : "Keep Safe"
-    }
+        tag : "Wearing a mask, Washing hands daily and mainataining a social barrier can help in preventing thr spread of the virus",
+        source : "W.H.O",
+    },
+    {
+        question : "Is It Possible To have COVID-19 Twice ?",
+        choiceA : "Yes",
+        choiceB : "No",
+        choiceC : "Rare Cases",
+        choiceD : "",
+        correct : "C",
+        tag : "In a report Japanese authorities said a woman who had had the virus, and been declared virus-free, had tested positive again.",
+        source : "The Guardian",
+    },
+    {
+        question : "Which Country Has The Highest Number Registered Cases ?",
+        choiceA : "China",
+        choiceB : "Spain",
+        choiceC : "Italy",
+        choiceD : "U.S.A",
+        correct : "D",
+        tag : "As of 30-03-2020 USA has 1,47,465 Confirmed cases of Covid-19, followed by Italy and then Spain",
+        source : "Google",
+    },
+    {
+        question : "What Is a Pandemic ?",
+        choiceA : "A Problem That Has Grown Out Of Control",
+        choiceB : "Disease Which Affects A Whole Country Or The Entire World",
+        choiceC : "Event In which A Disease Is Actively Spreading",
+        choiceD : " When a disease occurs infrequently and irregularly.",
+        correct : "B",
+        tag : "An epidemic that has spread over several countries or continents, affecting a large number of people. A pandemic is when an epidemic spreads between countries",
+        source : "Health.com",
+    },
 ]
 
 //this function add an event to the start button when the page loads
@@ -55,6 +89,7 @@ function quizStart(){
 
 let lastQuestionIndex = questionsBank.length-1;
 let currentPage = 0;
+document.getElementById("totalQuestions").innerHTML = questionsBank.length;
 
 function questionGenerater(){
     let q = questionsBank[currentPage];
@@ -63,7 +98,7 @@ function questionGenerater(){
     presentChoiceB.innerHTML = q.choiceB;
     presentChoiceC.innerHTML = q.choiceC;
     presentChoiceD.innerHTML = q.choiceD;
-    presentExplaination.innerHTML = "EXTRA :\n" + q.tag;
+    presentExplaination.innerHTML = "EXTRA :\n" + q.tag + "\n Source :" + "\n" + q.source;
 };
 
 function checkAnswer(answer){
@@ -88,13 +123,14 @@ function nextQuestion(){
     button.className = "btn";
     if(currentPage < lastQuestionIndex){
         currentPage++;
+        document.getElementById("presentQuestion").innerHTML = currentPage;
         questionGenerater();
-        document.getElementById("presentQuestion").innerHTML = currentPage + 1;
     }else{
-        alert("you have completed the quiz")
+        //alert("you have completed the quiz")
+        questionContainer.style.display = "none";
+        changeParagarph.innerHTML = "For More Information Visit"
+        end.style.display = "block";
     }
     button.removeEventListener("click", nextQuestion)
 };
 
-document.getElementById("totalQuestions").innerHTML = questionsBank.length;
-document.getElementById("presentQuestion").innerHTML = currentPage + 1;

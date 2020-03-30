@@ -75,9 +75,10 @@ body , html{
     text-align: center;
     padding-top: 1%;
     padding-bottom: 1%;
-    border: solid 2px grey;
+    border: solid 1px grey;
     border-radius: 25px;
     transition-duration: 1s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #questionCounter h3{
     font-size: 18px;
@@ -120,9 +121,21 @@ body , html{
 a{
     text-decoration: none;
     color: black;
+    
 }
-a :active{
-    background-color: #fff;
+#moreLinks{
+    display: none;
+}
+.links{
+    margin: 10%;
+    font-size: 32px;
+    font-family: Righteous;
+    text-decoration: underline;
+    width: 70%;
+    text-align: center;
+}
+.add{
+    font-size: 42px;
 }
 /*.explained{
     font-size: 24px;
@@ -158,6 +171,27 @@ a :active{
     width: 70%;
     transition-duration: 0.4s;
 }
+/*footer{
+    margin-bottom: 0;
+    margin-top: 5%;
+    background-color:#000;
+    height: 100%;
+    display: block;
+    color: white;
+}*/
+.footer{
+    padding: 1%;
+    font-family: Righteous;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin-top: 4%;
+}
+.ico{
+    color: #fff;
+}
+
 
 
 
@@ -196,5 +230,14 @@ a :active{
     }
     .checkbtn{
         font-size: 20px;
+    }
+    .footer{
+        font-size: 12px;
+    }
+    .links{
+        font-size: 24px;
+    }
+    .add{
+        font-size: 32px;
     }
   }

@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COVID-19 Quiz</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/index.css">
     <link href="https://fonts.googleapis.com/css?family=Acme|Passion+One|Righteous|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
 </head>
@@ -10,7 +11,7 @@
     <div id="header">
         <img class="imgtag" src="./assets/images/image1-s.jpg">
         <h1 class="heading">COVID-19</h1>
-        <p class="sub-heading">Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2)</p>
+        <p class="sub-heading">Short Quiz</p>
         <hr class="line">
     </div>
     <div id="About">
@@ -39,12 +40,10 @@
             </h1>
         </div>
         <div id="optionBank">
-            <a href="#buttons">
-                <div class="choices" id="A" onclick="checkAnswer('A')">Choice 1</div>
-                </a>
-                <div class="choices" id="B" onclick="checkAnswer('B')">Choice 2</div>
-                <div class="choices" id="C" onclick="checkAnswer('C')">Choice 3</div>
-                <div class="choices" id="D" onclick="checkAnswer('D')">Choice 4</div>
+                <a href="#buttons"><div class="choices" id="A" onclick="checkAnswer('A')">Choice 1</div></a>
+                <a href="#buttons"><div class="choices" id="B" onclick="checkAnswer('B')">Choice 2</div></a>
+                <a href="#buttons"><div class="choices" id="C" onclick="checkAnswer('C')">Choice 3</div></a>
+                <a href="#buttons"><div class="choices" id="D" onclick="checkAnswer('D')">Choice 4</div></a>
         </div>
         <div id="explaination">
             <p class="explained">
@@ -56,6 +55,16 @@
             <p class="instruction">Press The Correct Option And Then Continue</p>
         </div>
     </div>
+    <div id="moreLinks">
+        <div id="link1" class="links"><i class="fa fa-globe add" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.who.int/">W.H.O Official Webpage</a></div>
+        <div id="link1" class="links"><i class="fa fa-heart add" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.mohfw.gov.in/">Indian Health Ministry</a></div>
+    </div>
+    <footer>
+        <p class="footer">TABEED HAMEED AHANGER &nbsp;&nbsp;
+        <a href="https://github.com/Tabeed-H" class="ico"><i class="fa fa-github icon" aria-hidden="true"></i></a>&nbsp;
+        <a href="https://www.instagram.com/tabeed.codes/" class="ico"><i class="fa fa-instagram icon" aria-hidden="true"></i></a>
+        </p>
+    </footer>
     <script src="./assets/main.js"></script>
     <script type="module" src="./assets/questions.js"></script>
 </body>
