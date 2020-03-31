@@ -1,3 +1,4 @@
+/*adds styling to the whole body*/
 body , html{
     margin: 0;
     padding: 0;
@@ -7,14 +8,19 @@ body , html{
      margin: 0; 
      padding : 0;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+/*adds styling to the header*/
 #header{
     width: 100%;
-    /*background-image: url(images/image1.jpg);*/
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: center;
     margin-top: 0;
 }
+/*adds styling to the header image*/
 .imgtag{
     margin:  auto;
     border-radius: 50%;
@@ -24,13 +30,7 @@ body , html{
     padding: 2px;
     margin-top: 3%;
 }
-.line{
-    width: 40%;
-    margin: auto;
-    height: 2px;
-    background-color: gray;
-    border-radius: 5px;
-}
+/*adds styling to the main heading*/
 .heading{
     text-align: center;
     color: #000;
@@ -38,6 +38,7 @@ body , html{
     font-family : Righteous;
     font-size: 42px;
 }
+/*adds styling to the text under the main heading*/
 .sub-heading{
     text-align: center;
     color: #000;
@@ -45,6 +46,15 @@ body , html{
     font-size: 32px;
     padding-bottom: 5%;
 }
+/*line seprating the header from the main body*/
+.line{
+    width: 40%;
+    margin: auto;
+    height: 2px;
+    background-color: gray;
+    border-radius: 5px;
+}
+/*adds styling to the landing page*/
 #About{
     padding-top: 2%;
     width: 70%;
@@ -57,6 +67,7 @@ body , html{
 #paragraph{
     display: block'
 }
+/*adds styling to the start button*/
 #startbtn{
     font-family: Righteous;
     font-size: 24px;
@@ -66,6 +77,7 @@ body , html{
     background-color: rgb(161, 226, 152);
     border-style: solid;
 }
+/*adds styling to the question card*/
 #questions{
     display: none;
     width: 60%;
@@ -80,6 +92,7 @@ body , html{
     transition-duration: 1s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+/*adds styling to the question counter*/
 #questionCounter h3{
     font-size: 18px;
     color: rgb(32, 21, 21);
@@ -87,11 +100,13 @@ body , html{
     word-spacing: 22px;
     padding: 2%;
 }
+/*adds styling to the questions*/
 #getQuestions{
     padding: 2% 0 3% 0;
     font-family: Righteous;
     padding: 1%;
 }
+/*adds styling to the choices container*/
 #optionBank{
     border: solid 5px;
     border-color: #000;
@@ -99,6 +114,7 @@ body , html{
     padding: 3%;
     border-radius: 25px;
 }
+/*add styling to the choices*/
 .choices{
     border: solid 2px black;
     font-family: Righteous;
@@ -107,6 +123,7 @@ body , html{
     margin: 3%;
     border-radius: 25px;
 }
+/*adds styling to the question support*/
 #explaination{
     display: none;
     font-family: Righteous;
@@ -114,38 +131,17 @@ body , html{
     font-size: 24px;
     transition-duration: 1.3s;
 }
+/*instruction line*/
 .instruction{
     font-family: Righteous;
     padding: 1%;
     font-size: 18px;
 }
-a{
-    text-decoration: none;
-    color: black;
-    
-}
-#moreLinks{
-    display: none;
-}
-.links{
-    margin: 10%;
-    font-size: 32px;
-    font-family: Righteous;
-    text-decoration: underline;
-    width: 70%;
-    text-align: center;
-}
-.add{
-    font-size: 42px;
-}
-/*.explained{
-    font-size: 24px;
-    font-family: Passion One;
-    padding: 1%;
-}*/
+/*adds styling to the next button*/
 #buttons{
     margin-top: 3%;
 }
+/*BEFORE THE BUTTON IS PRESSED*/
 .btn{
     padding: 3% 5% 3% 5%;
     color: white;
@@ -159,6 +155,7 @@ a{
     width: 70%;
     transition-duration: 0.4s;
 }
+/*AFTER THE BUTTON IS PRESSED*/
 .checkbtn{
     padding: 3% 5% 3% 5%;
     color: white;
@@ -172,14 +169,23 @@ a{
     width: 70%;
     transition-duration: 0.4s;
 }
-/*footer{
-    margin-bottom: 0;
-    margin-top: 5%;
-    background-color:#000;
-    height: 100%;
-    display: block;
-    color: white;
-}*/
+/*links availble at the end of quiz*/
+#moreLinks{
+    display: none;
+}
+.links{
+    margin: 10%;
+    font-size: 32px;
+    font-family: Righteous;
+    text-decoration: underline;
+    width: 70%;
+    text-align: center;
+}
+/*to the external icons*/
+.add{
+    font-size: 42px;
+}
+/*adds styling to the footer*/
 .footer{
     padding: 1%;
     font-family: Righteous;
@@ -201,7 +207,7 @@ a{
 
 
 
-
+/*CSS CHANGES ON MOBILE DEVICES*/
 
 @media screen and (max-width: 600px) {
     .heading{

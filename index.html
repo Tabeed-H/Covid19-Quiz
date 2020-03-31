@@ -1,71 +1,97 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
+    <meta name="descriptsion" content="A Short Knowledge Test On COVID-19.">
+    <meta mame="keywords" content="coronavirus, covid19, questions">
+    <meta name="author" content="Tabeed Hameed Ahangar">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COVID-19 Quiz</title>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./assets/index.css">
     <link href="https://fonts.googleapis.com/css?family=Acme|Passion+One|Righteous|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/index.css">
 </head>
 <body>
+
+    <!--header container-->
     <div id="header">
         <img class="imgtag" src="./assets/images/image1-s.jpg">
         <h1 class="heading">COVID-19</h1>
         <p class="sub-heading">Short Quiz</p>
         <hr class="line">
     </div>
+
+    <!--landing site about section container-->
     <div id="About">
         <div id="paragraph">
             <p>
-                Currently we are all under some kind of <span class="higlight">QURANTINE</span> due to Global outbreak of COVID-19.<br>
+                Currently we are all under some kind of QURANTINE due to Global outbreak of COVID-19.<br>
                 And keeping oneself busy is very difficult. <br>
                 Take this Quiz to keep your self busy and also see what you really know about the Virus.
             </p>
         </div>
+
+        <!--contains the start button-->
         <div class="start-btn">
             <a href="#questions"><button id="startbtn">
                 START QUIZ
             </button></a>
         </div>
     </div>
+
+    <!--quiz card-->
     <div id="questions">
+
+        <!--questions attempted counter-->
         <div id="questionCounter">
             <h3>
                 Question <span id="presentQuestion">0</span> of <span id="totalQuestions">1</span> Answered
             </h3>
         </div>
+
+        <!--question container-->
         <div id="questionBank">
             <h1 id="getQuestions">
                 Sample Question Here ?
             </h1>
         </div>
+
+        <!--choice container-->
         <div id="optionBank">
                 <a href="#buttons"><div class="choices" id="A" onclick="checkAnswer('A')">Choice 1</div></a>
                 <a href="#buttons"><div class="choices" id="B" onclick="checkAnswer('B')">Choice 2</div></a>
                 <a href="#buttons"><div class="choices" id="C" onclick="checkAnswer('C')">Choice 3</div></a>
                 <a href="#buttons"><div class="choices" id="D" onclick="checkAnswer('D')">Choice 4</div></a>
         </div>
+
+        <!--notes supporting the question-->
         <div id="explaination">
             <p class="explained">
                 * This will give the Explaination to the Question Asked only after attempted
             </p>
         </div>
+
+        <!--contains the next button-->
         <div id="buttons">
             <a href="#questions"><button id="next" class="btn" onclick="">Next</button></a>
             <p class="instruction">Press The Correct Option And Then Continue</p>
         </div>
+
     </div>
+
+    <!--quiz completion message card-->
     <div id="moreLinks">
         <div id="link1" class="links"><i class="fa fa-globe add" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.who.int/">W.H.O Official Webpage</a></div>
         <div id="link1" class="links"><i class="fa fa-heart add" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.mohfw.gov.in/">Indian Health Ministry</a></div>
     </div>
+
+    <!--contains follow links-->
     <footer>
         <!--<p class="footer">TABEED HAMEED AHANGER &nbsp;&nbsp;-->
         <a href="https://github.com/Tabeed-H" class="ico footer"><i class="fa fa-github icon" aria-hidden="true"></i></a>&nbsp;
         <!--<a href="https://www.instagram.com/tabeed.codes/" class="ico"><i class="fa fa-instagram icon" aria-hidden="true"></i></a>-->
-        </p>
     </footer>
+
+    <!--loads the script after the html has loaded-->
     <script src="./assets/main.js"></script>
-    <script type="module" src="./assets/questions.js"></script>
 </body>
 </html>
