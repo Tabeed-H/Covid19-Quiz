@@ -114,6 +114,7 @@ function checkAnswer(answer){
         document.getElementById("explaination").style.display = "block";
         presentExplaination.style.color = "red";
         button.className = "btn";
+        button.removeEventListener("click", nextQuestion)
     }
 };
 
